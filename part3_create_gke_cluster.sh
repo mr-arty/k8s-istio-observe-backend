@@ -6,11 +6,11 @@
 # purpose: Create 3-node GKE cluster
 
 # Constants - CHANGE ME!
-readonly PROJECT='go-srv-demo'
+readonly PROJECT='storied-box-173219'
 readonly CLUSTER='go-srv-demo-cluster'
-readonly REGION='us-central1'
-readonly MASTER_AUTH_NETS='72.231.208.0/24'
-readonly GKE_VERSION='1.12.6-gke.10'
+readonly REGION='northamerica-northeast1'
+readonly MASTER_AUTH_NETS='10.162.0.0/20'
+readonly GKE_VERSION='1.13.12-gke.13'
 readonly MACHINE_TYPE='n1-standard-2'
 
 # yes | gcloud components update

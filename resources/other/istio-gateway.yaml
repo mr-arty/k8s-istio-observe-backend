@@ -11,10 +11,10 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - ui.dev.example-api.com
-    - ui.test.example-api.com
-    - api.dev.example-api.com
-    - api.test.example-api.com
+    - ui.dev.my-istio-api.com
+    - ui.test.my-istio-api.com
+    - api.dev.my-istio-api.com
+    - api.test.my-istio-api.com
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -22,7 +22,7 @@ metadata:
   name: angular-ui-dev
 spec:
   hosts:
-  - ui.dev.example-api.com
+  - ui.dev.my-istio-api.com
   gateways:
   - demo-gateway
   http:
@@ -42,7 +42,7 @@ metadata:
   name: service-a-dev
 spec:
   hosts:
-  - api.dev.example-api.com
+  - api.dev.my-istio-api.com
   gateways:
   - demo-gateway
   http:
@@ -62,7 +62,7 @@ metadata:
   name: angular-ui-test
 spec:
   hosts:
-  - ui.test.example-api.com
+  - ui.test.my-istio-api.com
   gateways:
   - demo-gateway
   http:
@@ -82,7 +82,7 @@ metadata:
   name: service-a-test
 spec:
   hosts:
-  - api.test.example-api.com
+  - api.test.my-istio-api.com
   gateways:
   - demo-gateway
   http:

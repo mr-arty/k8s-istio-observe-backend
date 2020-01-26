@@ -5,6 +5,7 @@
 # license: MIT License
 # purpose: Install Istio 1.1.x
 #          make sure to 'export ISTIO_HOME'
+export ISTIO_HOME="/home/arty/Work/K8S/istio-1.4.2/"
 
 # helm repo add istio.io https://storage.googleapis.com/istio-prerelease/daily-build/master-latest-daily/charts
 # helm repo list
